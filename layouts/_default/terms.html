@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<!-- begin tags -->
+<div class="tags">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="tags__info">
+          <h1 class="tags__title">{{ .Title }}</h1>
+          <div class="tags__list">
+            {{ range .Pages }}
+              <a href="{{ .Permalink }}" class="tags__link">{{ .Title }}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end tags -->
+
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ if gt (len $posts) 0 }}
+<!-- begin recent posts -->
+<section class="section recent-posts">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__info">
+          <h2 class="section__title">Recent <em>Articles</em></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      {{ range ( where site.RegularPages "Section" "posts" | first 4 ) }}
+        {{ partial "article.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- end recent posts -->
+{{ end }}
+
+{{ end }}

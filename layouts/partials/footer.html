@@ -1,0 +1,56 @@
+<!-- begin footer -->
+<footer class="footer">
+  <div class="container">
+
+    {{ if and (not .IsHome) .Site.Params.mailchimp.enable }}
+    <div class="row">
+      <div class="col col-12">
+        <div class="subscribe">
+          <div class="subscribe__content">
+          {{ if .Site.Params.mailchimp.mailchimp_title }}
+            <h3 class="subscribe__title">{{ .Site.Params.mailchimp.mailchimp_title | safeHTML }}</h3>
+          {{ end }}
+          {{ if .Site.Params.mailchimp.mailchimp_description }}
+            <p class="subscribe__description">{{ .Site.Params.mailchimp.mailchimp_description | safeHTML }}</p>
+          {{ end }}
+          </div>
+          <form class="subscribe__form validate"
+            action="{{ if .Site.Params.mailchimp.mailchimp_identifier }}//{{.Site.Params.mailchimp.mailchimp_identifier}}{{ else }}#{{ end }}"
+            method="POST" id="membedded-subscribe-form" name="membedded-subscribe-form" target="_blank" novalidate>
+            <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
+            <input class="subscribe__email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="{{ if .Site.Params.mailchimp.mailchimp_input_text }}{{ .Site.Params.mailchimp.mailchimp_input_text }}{{ else }}Email address{{ end }}">
+            <button class="button button--accent" id="membedded-subscribe" type="submit" name="subscribe">{{ .Site.Params.mailchimp.mailchimp_button_text }}</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+
+    <div class="row">
+      <div class="col col-12">
+        <div class="footer__info">
+
+          <div class="copyright">{{ dateFormat "2006" now }} &copy; <a href="/">{{ .Site.Title }}</a>. All Right Reserved.</div>
+
+          {{ if and (not .IsHome) .Site.Params.social }}
+          <div class="social">
+            {{ with .Site.Params.social }}
+            <ul class="social__list list-reset">
+              {{ range . }}
+              <li class="social__item">
+                <a class="social__link" href="{{ .link }}" target="_blank" rel="noopener"
+                  aria-label="{{ .name }} link"><i class="{{ .icon }}"></i></a>
+              </li>
+              {{ end }}
+            </ul>
+            {{ end }}
+          </div>
+          {{ end }}
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- end footer -->

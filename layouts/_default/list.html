@@ -1,0 +1,56 @@
+{{ define "main" }}
+
+{{ if (eq .Section "tags") }}
+
+<!-- begin tag page -->
+<section class="tag-page">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="tag-page__head">
+          <h1 class="tag-page__title">{{ .Title }}</h1>
+          <em class="tag-page__counter">{{ len .Pages }} {{ if lt (len .Pages) 2 }}Article{{ else }}Articles{{ end }}</em>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+    {{ range .Data.Pages }}
+      {{ partial "article.html" . }}
+    {{ end }}
+    </div>
+  </div>
+</section>
+<!-- end tag page -->
+
+{{ else if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") }}
+
+<!-- begin page section head -->
+<div class="container">
+  <div class="page-section-head">
+    {{ if .Title }}
+      <h1 class="page-section-title">{{ .Title | safeHTML }}</h1>
+    {{ end }}
+    {{ if .Description }}
+      <p class="page-section-description">{{ .Description | safeHTML }}</p>
+    {{ end }}
+  </div>
+</div>
+<!-- end page section head -->
+
+<div class="blog-page container">
+  <div class="row grid">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts" ) }}
+    {{ range $index, $element := $paginator.Pages }}
+      {{ partial "article.html" . }}
+    {{ end }}
+  </div>
+</div>
+
+{{ partial "pagination.html" . }}
+
+{{ end }}
+
+{{ end }}

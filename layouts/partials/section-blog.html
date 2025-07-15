@@ -1,0 +1,69 @@
+<!-- begin section blog -->
+{{ if (.Site.Params.blog.enable) }}
+<section class="section section-blog">
+  <div class="row">
+    <div class="col col-12">
+
+      <div class="section__info">
+        {{ if .Site.Params.blog.blog_title }}
+          <h2 class="section__title">{{ .Site.Params.blog.blog_title | safeHTML }}</h2>
+        {{ end }}
+        {{ if .Site.Params.blog.blog_description }}
+          <p class="section__description">{{ .Site.Params.blog.blog_description | safeHTML }}</p>
+        {{ end }}
+      </div>
+
+      <div class="row">
+        {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts" | first 4 ) }}
+        {{ range $paginator.Pages }}
+        <div class="article col col-6 col-t-12">
+          <div class="article__content">
+
+            <div class="article__head">
+               {{ if and (.Params.Image) (.Params.video_embed) }}
+              <div class="video-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                  <polygon points="40,30 65,50 40,70"></polygon>
+                </svg>
+              </div>
+              {{ end }}
+              {{ if .Params.Image }}
+              <a href="{{ .RelPermalink }}" class="article__image">
+                <img class="lazy" data-src="{{ .Params.Image | absURL }}" alt="{{ .Title }}">
+              </a>
+              {{ end }}
+            </div>
+
+            <div class="article__info">
+              <h2 class="article__title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h2>
+              <div class="article__meta">
+                {{ if .Params.tags }}
+                <div class="article__tags">
+                  {{ range (.GetTerms "tags") }}
+                    <a href="{{ .Permalink }}" class="article__tag">{{ .LinkTitle }}</a>
+                  {{ end }}
+                </div>
+                •
+                {{ end }}
+                <time class="article__date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2 Jan, 2006" }}</time>
+                •
+                <span class="article__minutes">{{ .ReadingTime }} min read</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section__navigation">
+    <a href="/posts" class="button section__button">All Articles <i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+</section>
+{{ end }}
+<!-- end section blog -->

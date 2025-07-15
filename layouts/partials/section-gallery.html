@@ -1,0 +1,36 @@
+{{ if .Site.Params.gallery.enable }}
+<!-- begin section gallery -->
+<section class="section section-gallery">
+  <div class="row">
+    <div class="col col-12">
+
+      <div class="section__info">
+        {{ if .Site.Params.gallery.gallery_title }}
+          <h2 class="section__title">{{ .Site.Params.gallery.gallery_title | safeHTML }}</h2>
+        {{ end }}
+        {{ if .Site.Params.gallery.gallery_description }}
+          <p class="section__description">{{ .Site.Params.gallery.gallery_description | safeHTML }}</p>
+        {{ end }}
+      </div>
+
+      <div class="section-gallery__inner">
+        {{ with .Site.Params.gallery_image }}
+          {{ range . }}
+          <div class="section-gallery__image">
+            <img class="lazy" data-src="{{ .image_url }}" alt="{{ .image_alt }}">
+          </div>
+          {{ end }}
+        {{ end }}
+      </div>
+
+      {{ if .Site.Params.gallery.gallery_caption }}
+      <div class="section-gallery__caption">
+        {{ .Site.Params.gallery.gallery_caption | safeHTML }}
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+<!-- end section gallery -->
+{{ end }}

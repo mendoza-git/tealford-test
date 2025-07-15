@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+<div class="container">
+  <div class="page-head{{ if and (not .Params.Image) (not .Params.video_embed) }} without-image{{ end }}">
+
+    <div class="page-info">
+      <h1 class="page-title">{{ .Title | safeHTML }}</h1>
+    </div>
+
+    {{ if .Params.video_embed }}
+    <div class="page-video">
+      <div class="page-video__wrap">
+        <iframe src="{{ .Params.video_embed }}" loading="lazy" width="640" height="360" frameborder="0"
+          webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>
+    {{ else }}
+
+    {{ if .Params.image }}
+    <div class="page-image">
+      <img class="lazy" data-src="{{ .Params.Image | absURL }}" alt="{{ .Title }}">
+    </div>
+    {{ end }}
+
+    {{ end }}
+  </div>
+
+  <!-- begin page -->
+  <article class="page">
+    <div class="page__content">
+      {{ if .Description }}
+        <p class="contact-description">{{ .Description }}</p>
+      {{ else }}
+        <p class="contact-description">{{ .Content }}</p>
+      {{ end }}
+      <form class="contact-form"
+        action="{{ if .Site.Params.contact.email }}https://formspree.io/f/{{.Site.Params.contact.email}}{{ else }}#{{ end }}" method="POST">
+        <div class="form__group">
+          <label class="form__label screen-reader-text" for="form-name">Your Name</label>
+          <input class="form__input" id="form-name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form__group">
+          <label class="form__label screen-reader-text" for="form-email">Your Email</label>
+          <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="Enter your email" required>
+        </div>
+        <div class="form__group">
+          <label class="form__label screen-reader-text" for="form-text">Your Message</label>
+          <textarea class="form__input" id="form-text" name="text" rows="8" placeholder="Enter your message" required></textarea>
+        </div>
+        <div class="form__group">
+          <button class="button button--accent" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+    <hr>
+  </article>
+  <!-- end page -->
+</div>
+
+{{ end }}

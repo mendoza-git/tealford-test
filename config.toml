@@ -1,0 +1,229 @@
+#-------------------------------
+# General Site Settings
+baseURL = "/"
+languageCode = "en-us"
+title = "A Creative Range"
+googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
+
+
+#-------------------------------
+# Pagination settings:
+
+# For Hugo versions 0.128.0 and above, use the following settings:
+# This will set the number of items per page for newer versions.
+[pagination]
+  pagerSize = 8
+
+# For Hugo versions below 0.128.0, uncomment the line below and comment out the [pagination] block above:
+#paginate = 8 # Sets the number of items per page for older versions.
+
+
+#-------------------------------
+# Main Menu
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+
+# Call to action button
+[params.cta_button]
+  enable = true
+  cta_button_link = "/contact/"
+  cta_button_text = "Say Hello!"
+
+
+[params]
+  logo = "/images/logo.png" # You can add own logo. For example "/images/logo.png".
+  logo_dark = "/images/logo.png"
+  description = ""
+  color_scheme = "auto" # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
+
+
+#-------------------------------
+# Author Settings
+[params.author]
+  author_intro = "Hey, I’m John Doe"
+  author_name = "A Creative Range"
+  author_role = "Artist & Designer"
+  author_avatar = "https://via.placeholder.com/160x160"
+
+
+#-------------------------------
+# Sidebar Section Settings
+[params.sidebar]
+  sidebar_title = "One Stop Daily <em>News,</em> <em>Article,</em> <em>Inspiration</em>." # You can add an 'em' element to highlight text.
+  sidebar_description = "Welcome to a unique world of creativity and innovation! Here you'll find engaging articles, helpful tips, and captivating stories from the realms of design."
+
+# Social Links
+[[params.social]]
+  icon = "fa-brands fa-x-twitter"
+  name = "Twitter"
+  link = "https://twitter.com"
+
+[[params.social]]
+  icon = "fa-brands fa-facebook"
+  name = "Facebook"
+  link = "https://facebook.com"
+
+[[params.social]]
+  icon = "fa-brands fa-instagram"
+  name = "Instagram"
+  link = "https://instagram.com"
+
+
+#-------------------------------
+# Projects Settings
+[params.projects]
+  enable = true
+  projects_title= "Art Gallery <em>Showcase</em>" # You can add an 'em' element to highlight text.
+  projects_description= "One of a kind String Art customized towards your choosing. From portraits, landscapes, Sacred Geometry, or of any other idea the imagination creates, your art piece will be crafted with care as well as with you in mind the whole journey. "
+
+
+#-------------------------------
+# Testimonials Settings
+[params.testimonials]
+  enable = false
+  testimonials_title = "Trusted by <em>Artists</em>" # You can add an 'em' element to highlight text.
+  testimonials_description = "Join our community of creative professionals where you can develop your talents and reach new heights in design."
+
+[[params.testimonial_item]]
+  name = "Amelia Jones"
+  image = "https://via.placeholder.com/80x80"
+  designation = "Street Artist"
+  content = "Working with A Creative Range was so fun. Their designs are not only visually stunning but also highly functional, making them perfect for our needs."
+
+[[params.testimonial_item]]
+  name = "Ethan Robinson"
+  image = "https://via.placeholder.com/80x80"
+  designation = "Graphic Designer"
+  content = "A Creative Range is a true visionary in the field of art. His ability to think outside the box and push boundaries is what sets him apart from the rest."
+
+[[params.testimonial_item]]
+  name = "Matthew Garcia"
+  image = "https://via.placeholder.com/80x80"
+  designation = "Product Designer"
+  content = "I cannot recommend this designer highly enough. Their designs are not only visually stunning but also highly functional, making them perfect for our needs."
+
+
+#-------------------------------
+# Blog Section Settings
+[params.blog]
+  enable = true
+  blog_title = "Latest <em>Articles</em> & <em>Publications</em>" # You can add an 'em' element to highlight text.
+  blog_description = "Discover the latest industry news, insights, and trends in a few clicks."
+
+
+#-------------------------------
+# Faq (Frequently asked questions) Settings
+[params.faq]
+  enable = false
+  faq_title = "Questions? <em>Answers</em>." # You can add an 'em' element to highlight text.
+  faq_description = "Find solutions to common queries here."
+
+[[params.faq_item]]
+  title = "What are your main areas of expertise in product design?"
+  description = "My specialization includes user interface (UI) and user experience (UX) design, prototyping, as well as researching and testing user needs."
+
+[[params.faq_item]]
+  title = "Can you provide examples of your work?"
+  description = "Yes, on my website, you can find a portfolio with examples of my projects and designs."
+
+[[params.faq_item]]
+  title = "What is your experience with various platforms and devices?"
+  description = "I have extensive experience working with various platforms, including websites, mobile applications, tablets, and other devices."
+
+[[params.faq_item]]
+  title = "What tools and software do you use for work?"
+  description = "I work with tools such as Sketch, Adobe XD, Figma, InVision for creating designs and prototypes, and also use Jira and Trello for project management."
+
+[[params.faq_item]]
+  title = "How long does it take to develop a product design?"
+  description = "The development time depends on the complexity of the project. Usually, creating a product design takes from several weeks to several months."
+
+[[params.faq_item]]
+  title = "How can I contact you to discuss my project?"
+  description = "You can contact me through the contact form on my website or directly via email. I'm always open to new projects and ready to discuss your idea."
+
+
+#-------------------------------
+# Gallery Settings
+[params.gallery]
+  enable = true
+  gallery_title = "Custom Handmade String <em>Art</em>" # You can add an 'em' element to highlight text.
+  gallery_description = "One of a kind String Art customized towards your choosing. From portraits, landscapes, Sacred Geometry, or of any other idea the imagination creates, your art piece will be crafted with care as well as with you in mind the whole journey."
+  gallery_caption = ""
+
+[[params.gallery_image]]
+  image_alt = "Together"
+  image_url = "https://via.placeholder.com/1200x800"
+
+[[params.gallery_image]]
+  image_alt = "Lifestyle"
+  image_url = "https://via.placeholder.com/1200x800"
+
+[[params.gallery_image]]
+  image_alt = "Friends"
+  image_url = "https://via.placeholder.com/1200x800"
+
+
+# Newsletter
+[params.mailchimp]
+  enable = false
+  mailchimp_title = "Subscribe to Our <em>Newsletter</em>" # You can add an 'em' element to highlight text.
+  mailchimp_description = "Join now and never miss out on our stuff again. Because you are worth it!"
+  mailchimp_identifier = "gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp" # Add your MailChimp form identifier. For example - gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp
+  mailchimp_input_text = "Your email address"
+  mailchimp_button_text = "Subscribe"
+
+
+#-------------------------------
+# Contact Settings
+[params.contact]
+  email = "your@email.com" # Add your form_id
+
+  # NOTE
+  # Baleon comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
+
+
+#-------------------------------
+# Comment Section (Disqus)
+[params.disqus]
+  enable = true
+  disqusShortname = "anvod-studio-test" # Add your shortname for Disqus Comment. For example anvod-studio-test
+
+
+[taxonomies]
+  tag = "tags"
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  noClasses = false

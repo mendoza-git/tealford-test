@@ -1,0 +1,48 @@
+<!-- begin sidebar -->
+<section class="sidebar">
+  <div class="sidebar__inner">
+
+    <div class="sidebar__meta">
+      {{ if .Site.Params.author.author_avatar }}
+      <div class="sidebar__avatar">
+        <img class="lazy" data-src="{{ .Site.Params.author.author_avatar }}" alt="{{ .Site.Params.author.author_name }}">
+      </div>
+      {{ end }}
+      <div class="sidebar__info">
+        {{ if .Site.Params.author.author_intro }}
+          <div class="sidebar__intro">{{ .Site.Params.author.author_intro }}</div>
+        {{ end }}
+        {{ if .Site.Params.author.author_role }}
+          <span class="sidebar__role">{{ .Site.Params.author.author_role }}</span>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="sidebar__content">
+      {{ if .Site.Params.sidebar.sidebar_title }}
+        <h1 class="sidebar__title">{{ .Site.Params.sidebar.sidebar_title | safeHTML }}</h1>
+      {{ end }}
+      {{ if .Site.Params.sidebar.sidebar_description }}
+        <p class="sidebar__description">{{ .Site.Params.sidebar.sidebar_description | safeHTML }}</p>
+      {{ end }}
+    </div>
+
+    <div class="sidebar__social">
+      {{ if .Site.Params.social }}
+        {{ with .Site.Params.social }}
+        <ul class="sidebar__social__list list-reset">
+          {{ range . }}
+          <li class="sidebar__social__item">
+            <a class="sidebar__social__link" href="{{ .link }}" target="_blank" rel="noopener"
+              aria-label="{{ .name }} link"><i class="{{ .icon }}"></i></a>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <div class="sidebar__copyright">{{ dateFormat "2006" now }} &copy; <a href="/">{{ .Site.Title }}</a>. All Right Reserved.</div>
+  </div>
+</section>
+<!-- end sidebar -->

@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+<!-- begin page section head -->
+<div class="container">
+  <div class="page-section-head">
+    {{ if .Title }}
+      <h1 class="page-section-title">{{ .Title | safeHTML }}</h1>
+    {{ end }}
+    {{ if .Description }}
+      <p class="page-section-description">{{ .Description | safeHTML }}</p>
+    {{ end }}
+  </div>
+</div>
+<!-- end page section head -->
+
+<div class="projects-page container">
+  <div class="row">
+    {{ range (where .Site.RegularPages "Section" "projects" ) }}
+    <article class="project col col-3 col-d-6 col-t-12">
+      <div class="project__content">
+
+        <div class="project__head">
+          {{ if and (.Params.Image) (.Params.video_embed) }}
+          <div class="video-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <polygon points="40,30 65,50 40,70"></polygon>
+            </svg>
+          </div>
+          {{ end }}
+          {{ if .Params.Image }}
+          <a href="{{ .RelPermalink }}" class="project__image">
+            <img class="lazy" data-src="{{ .Params.Image | absURL }}" alt="{{ .Params.Title }}">
+          </a>
+          {{ end }}
+        </div>
+
+        <div class="project__info">
+          <h2 class="project__title">
+            <a href="{{ .RelPermalink }}">{{ .Params.title }}</a>
+          </h2>
+          <div class="project__meta">
+            {{ if .Params.subtitle }}
+              <div class="project__subtitle">{{ .Params.subtitle }}</div>•
+            {{ end }}
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2 Jan, 2006" }}</time>
+          </div>
+        </div>
+
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}
