@@ -6,7 +6,9 @@
   height: auto;
   width: 100%;
   border-bottom: 1px solid var(--border-color);
-  background: var(--background-color);
+  // background-color: red !important; // Temporary for testing
+  // background: var(--background-color);
+  // background-image: url('/images/menu-background.jpg') !important;
   will-change: transform;
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -38,9 +40,11 @@
   text-decoration: none;
   transition: color .25s ease;
 
-  &:hover {
-    color: var(--brand-color);
-  }
+  color: #000 !important;
+
+  // &:hover {
+  //   color: var(--brand-color);
+  // }
 }
 
 .logo__image,
@@ -242,8 +246,13 @@
   }
 }
 
+.home-page .nav__item .nav__link {
+  // color: #000;
+}
+
 .home-page .nav__item .nav__link.active-link {
   color: var(--link-color);
+  // color: #000;
 
   &:hover {
     color: var(--brand-color);

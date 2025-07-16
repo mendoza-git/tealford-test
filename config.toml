@@ -59,7 +59,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 #-------------------------------
 # Author Settings
 [params.author]
-  author_intro = "Hey, I’m John Doe"
+  author_intro = "Hey, I’m A Creative Range"
   author_name = "A Creative Range"
   author_role = "Artist & Designer"
   author_avatar = "https://via.placeholder.com/160x160"
@@ -68,8 +68,8 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 #-------------------------------
 # Sidebar Section Settings
 [params.sidebar]
-  sidebar_title = "One Stop Daily <em>News,</em> <em>Article,</em> <em>Inspiration</em>." # You can add an 'em' element to highlight text.
-  sidebar_description = "Welcome to a unique world of creativity and innovation! Here you'll find engaging articles, helpful tips, and captivating stories from the realms of design."
+  sidebar_title = "One <em>Vision,</em> <em>Journey,</em> <em>Inspiration</em>." # You can add an 'em' element to highlight text.
+  sidebar_description = "Welcome to my site. My art is a gateway into my life with each new piece depicting ideas that I have yet to pave a road towards."
 
 # Social Links
 [[params.social]]
@@ -92,8 +92,8 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 # Projects Settings
 [params.projects]
   enable = true
-  projects_title= "Art Gallery <em>Showcase</em>" # You can add an 'em' element to highlight text.
-  projects_description= "One of a kind String Art customized towards your choosing. From portraits, landscapes, Sacred Geometry, or of any other idea the imagination creates, your art piece will be crafted with care as well as with you in mind the whole journey. "
+  projects_title= "Featured Projects <em>Showcase</em>" # You can add an 'em' element to highlight text.
+  projects_description= "Explore our latest projects and discover the creative process behind each design. From concept to completion, we bring your ideas to life with passion and precision."
 
 
 #-------------------------------
@@ -127,7 +127,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 [params.blog]
   enable = true
   blog_title = "Latest <em>Articles</em> & <em>Publications</em>" # You can add an 'em' element to highlight text.
-  blog_description = "Discover the latest industry news, insights, and trends in a few clicks."
+  blog_description = "Keep up with the latest from A Creative Range."
 
 
 #-------------------------------
@@ -166,21 +166,21 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 # Gallery Settings
 [params.gallery]
   enable = true
-  gallery_title = "Custom Handmade String <em>Art</em>" # You can add an 'em' element to highlight text.
+  gallery_title = "Custom Handmade String Art <em>Gallery</em>" # You can add an 'em' element to highlight text.
   gallery_description = "One of a kind String Art customized towards your choosing. From portraits, landscapes, Sacred Geometry, or of any other idea the imagination creates, your art piece will be crafted with care as well as with you in mind the whole journey."
   gallery_caption = ""
 
 [[params.gallery_image]]
   image_alt = "Together"
-  image_url = "https://via.placeholder.com/1200x800"
+  image_url = "/images/string-1.jpg"
 
 [[params.gallery_image]]
   image_alt = "Lifestyle"
-  image_url = "https://via.placeholder.com/1200x800"
+  image_url = "/images/string-2.jpg"
 
 [[params.gallery_image]]
   image_alt = "Friends"
-  image_url = "https://via.placeholder.com/1200x800"
+  image_url = "/images/string-3.jpg"
 
 
 # Newsletter
