@@ -2,7 +2,7 @@
 # General Site Settings
 baseURL = "https://mendoza-git.github.io/"
 languageCode = "en-us"
-title = "A Creative Range"
+title = "Melly's Bouquets"
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 
 
@@ -21,46 +21,46 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 #-------------------------------
 # Main Menu
 [menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
+  # [[menu.main]]
+  #   name = "Home"
+  #   url = "/"
+  #   weight = 1
 
-  [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 2
+  # [[menu.main]]
+  #   name = "Projects"
+  #   url = "/projects/"
+  #   weight = 2
 
-  [[menu.main]]
-    name = "Blog"
-    url = "/posts/"
-    weight = 3
+  # [[menu.main]]
+  #   name = "Blog"
+  #   url = "/posts/"
+  #   weight = 3
 
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 4
+  # [[menu.main]]
+  #   name = "About"
+  #   url = "/about/"
+  #   weight = 4
 
 
 # Call to action button
 [params.cta_button]
-  enable = true
+  enable = false
   cta_button_link = "/contact/"
   cta_button_text = "Say Hello!"
 
 
 [params]
-  logo = "/images/logo.png" # You can add own logo. For example "/images/logo.png".
-  logo_dark = "/images/logo.png"
+  logo = "/images/mb-logo@5x.png" # You can add own logo. For example "/images/logo.png".
+  logo_dark = "/images/mb-logo@5x.png"
   description = ""
-  color_scheme = "auto" # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
+  color_scheme = "light" # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
 #-------------------------------
 # Author Settings
 [params.author]
-  author_intro = "Hey, I’m A Creative Range"
-  author_name = "A Creative Range"
+  author_intro = "Hey, I’m Melly's Bouquets"
+  author_name = "Melly's Bouquets"
   author_role = "Artist & Designer"
   author_avatar = "https://via.placeholder.com/160x160"
 
@@ -68,8 +68,8 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 #-------------------------------
 # Sidebar Section Settings
 [params.sidebar]
-  sidebar_title = "One <em>Vision,</em> <em>Journey,</em> <em>Inspiration</em>." # You can add an 'em' element to highlight text.
-  sidebar_description = "Welcome to my site. My art is a gateway into my life with each new piece depicting ideas that I have yet to pave a road towards."
+  sidebar_title = "Hello," # You can add an 'em' element to highlight text.
+  sidebar_description = "Welcome to my site. Feel free to explore my work and get in touch if you have any questions or just want to say hi! I’m always open to new projects and collaborations."
 
 # Social Links
 [[params.social]]
@@ -92,8 +92,8 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 # Projects Settings
 [params.projects]
   enable = true
-  projects_title= "Featured Projects <em>Showcase</em>" # You can add an 'em' element to highlight text.
-  projects_description= "Explore our latest projects and discover the creative process behind each design. From concept to completion, we bring your ideas to life with passion and precision."
+  projects_title= "Bouquets Types <em>Shop</em>" # You can add an 'em' element to highlight text.
+  projects_description= "Browse the types of bouquets we offer."
 
 
 #-------------------------------
@@ -125,7 +125,7 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 #-------------------------------
 # Blog Section Settings
 [params.blog]
-  enable = true
+  enable = false
   blog_title = "Latest <em>Articles</em> & <em>Publications</em>" # You can add an 'em' element to highlight text.
   blog_description = "Keep up with the latest from A Creative Range."
 
@@ -166,8 +166,8 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 # Gallery Settings
 [params.gallery]
   enable = true
-  gallery_title = "Custom Handmade String Art <em>Gallery</em>" # You can add an 'em' element to highlight text.
-  gallery_description = "One of a kind String Art customized towards your choosing. From portraits, landscapes, Sacred Geometry, or of any other idea the imagination creates, your art piece will be crafted with care as well as with you in mind the whole journey."
+  gallery_title = "Showcase <em>Gallery</em>" # You can add an 'em' element to highlight text.
+  gallery_description = "Explore our collection of custom bouquets and designs."
   gallery_caption = ""
 
 [[params.gallery_image]]

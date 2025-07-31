@@ -2,7 +2,7 @@
 // You can generate any color here - https://htmlcolorcodes.com
 
 :root {
-  --brand-color: #ffab0f;
+  --brand-color: #c42ba8;
   --white: #fff;
   --light-gray: #e5e5e5;
   --light-blue: #eff0f4;
@@ -29,8 +29,8 @@
   --button-color: var(--white);
   --button-background-color: var(--dark);
   --button-background-hover: var(--brand-color);
-  --button-gradient-color: linear-gradient(180deg, #ffab0f 0%, #ffbf0f 100%);
-  --button-gradient-hover: linear-gradient(-90deg, #ffab0f 0%, #ffbf0f 100%);
+  --button-gradient-color: linear-gradient(180deg, #c42ba8 0%, #c42ba8 100%);
+  --button-gradient-hover: linear-gradient(-90deg, #c42ba8 0%, #c42ba8 100%);
 
   --border-color: var(--light-gray);
 
@@ -41,7 +41,7 @@
 }
 
 :root[dark] {
-  --brand-color: #ffab0f;
+  --brand-color: #c42ba8;
   --white: #fff;
   --light-gray: #f0f0f0;
   --blue-gray: #242424;
@@ -67,8 +67,8 @@
   --button-color: var(--white);
   --button-background-color: var(--background-alt-color);
   --button-background-hover: var(--brand-color);
-  --button-gradient-color: linear-gradient(180deg, #ffab0f 0%, #ffbf0f 100%);
-  --button-gradient-hover: linear-gradient(-90deg, #ffab0f 0%, #ffbf0f 100%);
+  --button-gradient-color: linear-gradient(180deg, #c42ba8 0%, #c42ba8 100%);
+  --button-gradient-hover: linear-gradient(-90deg, #c42ba8 0%, #c42ba8 100%);
 
   --border-color: #252629;
 

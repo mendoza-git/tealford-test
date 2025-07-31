@@ -29,6 +29,13 @@ body {
 }
 
 .global-wrap {
+  background-image: url('/images/mb-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  
   &.is-active {
     overflow-x: hidden;
     overflow-y: scroll;

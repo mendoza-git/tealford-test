@@ -53,7 +53,7 @@
           </div>
 
           <div class="nav-button">
-            {{ if or (eq .Site.Params.color_scheme "light") (eq .Site.Params.color_scheme "dark") }}
+            {{/*  {{ if or (eq .Site.Params.color_scheme "light") (eq .Site.Params.color_scheme "dark") }}
             {{ else }}
             <div class="toggle-theme toggle-theme-js">
               <div class="toggle-moon" title="Dark mode">
@@ -64,7 +64,7 @@
               </div>
               <div class="toggle-thumb"></div>
             </div>
-            {{ end }}
+            {{ end }}  */}}
 
             {{ if .Site.Params.cta_button.enable }}
             <a href="{{ if .Site.Params.cta_button.cta_button_link }}{{ .Site.Params.cta_button.cta_button_link }}{{ else }}#{{ end }}" class="nav__link cta-button button button--accent">{{ .Site.Params.cta_button.cta_button_text }}</a>

@@ -2,7 +2,7 @@
 <section class="sidebar">
   <div class="sidebar__inner">
 
-    <div class="sidebar__meta">
+    {{/*  <div class="sidebar__meta">
       {{ if .Site.Params.author.author_avatar }}
       <div class="sidebar__avatar">
         <img class="lazy" data-src="{{ .Site.Params.author.author_avatar }}" alt="{{ .Site.Params.author.author_name }}">
@@ -16,14 +16,15 @@
           <span class="sidebar__role">{{ .Site.Params.author.author_role }}</span>
         {{ end }}
       </div>
-    </div>
+    </div>  */}}
 
     <div class="sidebar__content">
       {{ if .Site.Params.sidebar.sidebar_title }}
-        <h1 class="sidebar__title">{{ .Site.Params.sidebar.sidebar_title | safeHTML }}</h1>
+        <h4 class="sidebar__title">{{ .Site.Params.sidebar.sidebar_title | safeHTML }}</h4>
       {{ end }}
       {{ if .Site.Params.sidebar.sidebar_description }}
         <p class="sidebar__description">{{ .Site.Params.sidebar.sidebar_description | safeHTML }}</p>
+        <p class="sidebar__signature">- Melly</p>
       {{ end }}
     </div>
 
@@ -42,7 +43,7 @@
       {{ end }}
     </div>
 
-    <div class="sidebar__copyright">{{ dateFormat "2006" now }} &copy; <a href="/">{{ .Site.Title }}</a>. All Right Reserved.</div>
+    <div class="sidebar__copyright">{{ dateFormat "2006" now }} &copy; <a href="/">{{ .Site.Title }}</a>. Made with♥️</div>
   </div>
 </section>
 <!-- end sidebar -->

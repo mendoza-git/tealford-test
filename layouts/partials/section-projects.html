@@ -33,7 +33,7 @@
               {{ end }}
             </div>
 
-            <div class="project__info">
+            {{/*  <div class="project__info">
               <h2 class="project__title">
                 <a href="{{ .RelPermalink }}">{{ .Params.title }}</a>
               </h2>
@@ -43,6 +43,12 @@
                 {{ end }}
                 <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2 Jan, 2006" }}</time>
               </div>
+            </div>  */}}
+
+            <div class="project__info">
+              <h2 class="project__title">
+                <a href="{{ .RelPermalink }}">{{ .Params.title }}</a>
+              </h2>
             </div>
 
           </div>
@@ -53,9 +59,9 @@
     </div>
   </div>
 
-  <div class="section__navigation">
+  {{/*  <div class="section__navigation">
     <a href="/projects" class="button section__button">All Projects <i class="fa-solid fa-arrow-up"></i></a>
-  </div>
+  </div>  */}}
 </section>
 <!-- end section projects -->
 {{ end }}

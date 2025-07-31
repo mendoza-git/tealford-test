@@ -20,7 +20,7 @@
         </div>
         {{ end }}
         <span>•</span>
-        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2 Jan, 2006" }}</time>
+        {{/*  <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2 Jan, 2006" }}</time>  */}}
         <span>•</span>
         <div class="post-minutes">{{ .ReadingTime }} min read</div>
       </div>
@@ -35,9 +35,9 @@
     {{ else }}
 
     {{ if .Params.image }}
-    <div class="post-image">
+    {{/*  <div class="post-image">
       <img class="lazy" data-src="{{ .Params.Image | absURL }}" alt="{{ .Title }}">
-    </div>
+    </div>  */}}
     {{ end }}
     {{ end }}
   </div>
@@ -48,7 +48,7 @@
       {{ .Content }}
     </div>
 
-    <div class="post__bottom">
+    {{/*  <div class="post__bottom">
       <div class="post__author">
         {{ if .Site.Params.author.author_avatar }}
         <div class="post__author__avatar">
@@ -65,7 +65,7 @@
         </div>
       </div>
       {{ partial "share-buttons.html" . }}
-    </div>
+    </div>  */}}
 
     {{ if .PrevInSection }}
     <div class="post__navigation">
