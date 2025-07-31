@@ -1,6 +1,6 @@
 #-------------------------------
 # General Site Settings
-baseURL = "https://mendoza-git.github.io/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Melly's Bouquets"
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
