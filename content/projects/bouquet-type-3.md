@@ -1,5 +1,5 @@
 ---
-title: Accessories
+title: Accessories + More
 date: 2024-05-16 08:01:35 +0300
 subtitle: Frisco, Texas
 image: '/images/accessories.jpg'
