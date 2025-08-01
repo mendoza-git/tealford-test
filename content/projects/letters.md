@@ -4,9 +4,9 @@ date: 2024-05-16 08:01:35 +0300
 subtitle: Frisco, Texas
 image: '/images/letters.jpg'
 ---
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Say it with style. Add custom letters to your bouquet—from initials and names to short phrases that make it so you. Whether it’s sweet, sassy, or sentimental, we’ll help you spell out the perfect vibe.
 
-<div class="gallery-box">
+<!-- <div class="gallery-box">
   <div class="gallery gallery-columns-2">
     <img src="https://via.placeholder.com/1200x800" loading="lazy" alt="Project">
     <img src="https://via.placeholder.com/1200x800" loading="lazy" alt="Project">
@@ -14,23 +14,61 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <img src="https://via.placeholder.com/1200x800" loading="lazy" alt="Project">
   </div>
   <em>Gallery / <a href="https://via.placeholder.com/1200x800">Unsplash</a></em>
+</div> -->
+<br>
+<br>
+
+## Current Stock
+<br>
+
+<style>
+.table-container table {
+  border-collapse: collapse;
+  width: 100%;
+  background: transparent;
+}
+.table-container tr {
+  transition: background 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+.table-container tr:hover {
+  background: linear-gradient(90deg, #fffbe6 0%, #fff 50%, #fffbe6 100%);
+}
+.table-container tr:hover::after {
+  content: '';
+  position: absolute;
+  left: -75%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
+  animation: shine 0.8s;
+  pointer-events: none;
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+.table-container td {
+  border: 1px solid #ccc;
+  color: inherit;
+  background: transparent;
+  padding: 8px 12px;
+  text-align: left;
+}
+.table-container th {
+  font-weight: 600;
+  background: transparent;
+}
+</style>
+
+<div class="table-container">
+  <table>
+    <tr><th>Lettering</th><th>In Stock</th></tr>
+    <tr><td>Gold Letter</td><td>❌ (coming soon)</td></tr>
+    <tr><td>Black Letters</td><td>❌ (coming soon)</td></tr>
+    <tr><td>Silver Letters</td><td>❌ (coming soon)</td></tr>
+  </table>
 </div>
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-## What is Lorem Ipsum?
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="https://via.placeholder.com/1200x800" loading="lazy" alt="Project">
-  </div>
-  <em>Photo by <a href="https://via.placeholder.com/1200x800">Roberto Nickson</a> on <a href="https://via.placeholder.com/1200x800">Unsplash</a></em>
-</div>
-
-## Where does it come from?
-
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.

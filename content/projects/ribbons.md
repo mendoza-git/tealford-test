@@ -4,33 +4,109 @@ date:
 subtitle: 
 image: '/images/ribbons.jpg'
 ---
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Tie it all together with a ribbon that speaks your style. From soft satins to bold prints and dreamy pastels, pick the perfect finishing touch to match your mood—or your outfit.
 
-<div class="gallery-box">
+<!-- <div class="gallery-box">
   <div class="gallery gallery-columns-2">
     <img src="https://via.placeholder.com/1200x800" loading="lazy" alt="Project">
     <img src="https://via.placeholder.com/1200x800" loading="lazy" alt="Project">
     <img src="https://via.placeholder.com/1200x800" loading="lazy" alt="Project">
     <img src="https://via.placeholder.com/1200x800" loading="lazy" alt="Project">
   </div>
-  <em>Gallery / <a hr ef="https://via.placeholder.com/1200x800">Unsplash</a></em>
+  <em>Gallery / <a href="https://via.placeholder.com/1200x800">Unsplash</a></em>
+</div> -->
+<br>
+<br>
+
+## Current Stock
+<br>
+
+<style>
+.table-container table {
+  border-collapse: collapse;
+  width: 100%;
+  background: transparent;
+}
+.table-container tr {
+  transition: background 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+.table-container tr:hover {
+  background: linear-gradient(90deg, #fffbe6 0%, #fff 50%, #fffbe6 100%);
+}
+.table-container tr:hover::after {
+  content: '';
+  position: absolute;
+  left: -75%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
+  animation: shine 0.8s;
+  pointer-events: none;
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+.table-container td {
+  border: 1px solid #ccc;
+  color: inherit;
+  background: transparent;
+  padding: 8px 12px;
+  text-align: left;
+}
+.table-container th {
+  font-weight: 600;
+  background: transparent;
+}
+.ribbon-color-cell {
+  width: 40px;
+  height: 24px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+.ribbon-purple { background: #a259e6; }
+.ribbon-yellow { background: #ffe066; }
+.ribbon-white { background: #fff; }
+.ribbon-pink { background: #ffb6c1; }
+.ribbon-red { background: #ff4d4f; }
+</style>
+
+<div class="table-container">
+  <table>
+    <tr>
+      <th>Ribbon Color</th>
+      <th>Color</th>
+      <th>In Stock</th>
+    </tr>
+    <tr>
+      <td>Purple</td>
+      <td><span class="ribbon-color-cell ribbon-purple"></span></td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Yellow</td>
+      <td><span class="ribbon-color-cell ribbon-yellow"></span></td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td><span class="ribbon-color-cell ribbon-white"></span></td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Pink</td>
+      <td><span class="ribbon-color-cell ribbon-pink"></span></td>
+      <td>❌ (coming soon)</td>
+    </tr>
+    <tr>
+      <td>Red</td>
+      <td><span class="ribbon-color-cell ribbon-red"></span></td>
+      <td>❌ (coming soon)</td>
+    </tr>
+  </table>
 </div>
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-## What is Lorem Ipsum?
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="https://via.placeholder.com/1200x800" loading="lazy" alt="Project">
-  </div>
-  <em>Photo by <a href="https://via.placeholder.com/1200x800">Roberto Nickson</a> on <a href="https://via.placeholder.com/1200x800">Unsplash</a></em>
-</div>
-
-## Where does it come from?
-
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.

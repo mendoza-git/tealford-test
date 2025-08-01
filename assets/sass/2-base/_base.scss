@@ -243,16 +243,16 @@ table th {
   padding: 10px;
   font-size: 16px;
   text-align: left;
-  border: 1px solid var(--th-color);
+  // border: 1px solid var(--th-color);
   color: var(--heading-font-color);
   font-weight: 700;
 }
 
 table tr {
-  background-color: var(--tr-color);
+  // background-color: var(--tr-color);
   transition: all .3s ease;
   &:nth-child(even) {
-    background-color: transparent;
+    // background-color: transparent;
   }
 }
 
