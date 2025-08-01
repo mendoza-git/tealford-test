@@ -92,8 +92,8 @@ googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 # Projects Settings
 [params.projects]
   enable = true
-  projects_title= "Bouquets Types <em>Shop</em>" # You can add an 'em' element to highlight text.
-  projects_description= "Browse the types of bouquets we offer."
+  projects_title= "Bouquet Builder <em>Stock</em>" # You can add an 'em' element to highlight text.
+  projects_description= "Choose the perfect bouquet for your occasion."
 
 
 #-------------------------------
