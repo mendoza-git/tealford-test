@@ -274,7 +274,7 @@
 .hamburger {
   width: 28px;
   height: 28px;
-  display: none;
+  display: none !important;
   cursor: pointer;
 
   @media (max-width: $desktop) {
@@ -286,6 +286,7 @@
 .hamburger div,
 .hamburger div:after,
 .hamburger div:before {
+  display: none !important;
   width: 28px;
   height: 4px;
   border-radius: 10px;
